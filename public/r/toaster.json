@@ -13,7 +13,8 @@
     {
       "path": "registry/bellhop/components/ui/sonner.tsx",
       "content": "\"use client\"\n\nimport { Toaster as Sonner, ToasterProps } from \"sonner\"\n\nimport { Info, LoaderCircle, CircleCheck, TriangleAlert, OctagonAlert } from \"lucide-react\"\n\nconst Toaster = ({ ...props }: ToasterProps) => {\n  \n  return (\n    <Sonner\n      className=\"toaster group\"\n      toastOptions={{\n        classNames: {\n          toast: 'bg-popover text-popover-foreground shadow-lg  rounded-lg border p-4',\n          title: 'text-color-fg text-sm/5 font-semibold',\n          description: 'text-color-fg/80 text-sm/5 font-medium',\n          actionButton:\n              \"!h-8 !whitespace-nowrap !bg-primary ! rounded-lg !px-3 !font-medium !text-sm hover:bg-primary/90\",\n          cancelButton:\n              \"!h-8 !whitespace-nowrap ! rounded-lg !px-3 !font-medium !text-sm hover:bg-color-fg/10\",\n          loader: 'bg-color-fg/10',\n          closeButton: 'bg-color-fg/10 hover:bg-color-fg/20',\n        },\n      }}\n      icons={{\n        success: <CircleCheck size={20} />,\n        info: <Info size={20} />,\n        warning: <TriangleAlert size={20} />,\n        error: <OctagonAlert size={20} />,\n        loading: <LoaderCircle size={20} />,\n      }}\n      style={\n        {\n          \"--normal-bg\": \"var(--color-popover)\",\n          \"--normal-text\": \"var(--color-popover-foreground)\",\n          \"--normal-border\": \"var(--border-input)\",\n        } as React.CSSProperties\n      }\n      {...props}\n    />\n  )\n}\n\nexport { Toaster }\n",
-      "type": "registry:ui"
+      "type": "registry:ui",
+      "target": "~/components/ui/sonner.tsx"
     }
   ]
 }

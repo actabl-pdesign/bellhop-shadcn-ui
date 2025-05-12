@@ -13,7 +13,7 @@
     {
       "path": "registry/bellhop/theme/bellhop.css",
       "type": "registry:file",
-      "target": "bellhop.css"
+      "target": "app/bellhop.css"
     }
   ],
   "cssVars": {
