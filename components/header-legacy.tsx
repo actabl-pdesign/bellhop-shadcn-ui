@@ -2,13 +2,12 @@
 
 import * as React from "react";
 
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/logo";
-import { ChevronDown, Bell, Search } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { MagnifyingGlassIcon, BellAlertIcon } from '@heroicons/react/16/solid';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 

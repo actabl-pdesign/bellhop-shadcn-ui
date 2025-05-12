@@ -1,5 +1,6 @@
 "use client";
 
+import "./bellhop.css"
 import * as React from "react";
 
 import { columns } from "@/components/columns";

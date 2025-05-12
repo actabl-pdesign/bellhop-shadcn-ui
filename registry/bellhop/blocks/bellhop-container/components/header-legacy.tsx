@@ -2,13 +2,13 @@
 
 import * as React from "react";
 
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/logo";
-import { ChevronDown, Bell, Search } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import { MagnifyingGlassIcon, BellAlertIcon } from '@heroicons/react/16/solid';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 
 interface HeaderLegacyProps {
@@ -30,13 +30,13 @@ const HeaderLegacy = ({ logoVariant = "actablSymbol" }: HeaderLegacyProps) => {
       <div className="w-full h-13 pl-2 flex items-center justify-start gap-2">
         <Logo variant={logoVariant} className="text-white w-10" />
         <div className="flex items-center gap-2">
-          <div className="h-8 w-px bg-indigo-600/30"></div>
+          <div className="h-8 w-px"></div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
                 variant="default"
                 size="md"
-                className="hover:bg-primary/80 cursor-pointer"
+                className="bg-transparent hover:bg-indigo-700/98 cursor-pointer"
                 endIcon={<ChevronDown />}
               >
                 Hotel Name
@@ -62,7 +62,7 @@ const HeaderLegacy = ({ logoVariant = "actablSymbol" }: HeaderLegacyProps) => {
             placeholder="Search..."
             className="pl-10 h-8 w-64 bg-white text-gray-700 rounded-lg focus-visible:border-ring focus-visible:ring-primary/30 focus-visible:ring-2"
           />
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-500" size={20} />
+          <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-500 size-4" />
         </div>
 
         <div className="relative">
@@ -70,7 +70,7 @@ const HeaderLegacy = ({ logoVariant = "actablSymbol" }: HeaderLegacyProps) => {
             variant="ghost"
             size="sm"
             className="text-white hover:bg-primary/80"
-            startIcon={<Bell />}
+            startIcon={<BellAlertIcon />}
           ></Button>
 
           <span className="absolute top-0 right-0 bg-destructive text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">

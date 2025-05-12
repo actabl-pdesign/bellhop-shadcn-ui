@@ -7,11 +7,11 @@
   "description": "Bellhop is a theme for shadcn/ui that implements the indigo color scheme.",
   "docs": "Don't forget to download fonts and import it in your project.",
   "registryDependencies": [
-    "http://localhost:3000/r/colors.json"
+    "https://raw.githubusercontent.com/actabl-pdesign/bellhop-shadcn-ui/refs/heads/main/public/r/colors.json"
   ],
   "files": [
     {
-      "path": "src/registry/bellhop/theme/bellhop.css",
+      "path": "registry/bellhop/theme/bellhop.css",
       "type": "registry:file",
       "target": "~/styles/bellhop.css"
     }

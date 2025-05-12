@@ -7,13 +7,11 @@
   "description": "A reusable icon component with customizable color and aura effect.",
   "dependencies": [
     "clsx",
-    "lucide-react",
-    "lucide-react",
-    "clsx"
+    "lucide-react"
   ],
   "files": [
     {
-      "path": "src/components/ui/featured-icon.tsx",
+      "path": "registry/bellhop/components/ui/featured-icon.tsx",
       "content": "import React from \"react\";\nimport { LucideIcon } from \"lucide-react\"; // Import LucideIcon type\nimport clsx from \"clsx\"; // Utility for conditional class names\n\ninterface FeaturedIconProps {\n  color: string;\n  icon: LucideIcon;\n}\n\nconst FeaturedIcon: React.FC<FeaturedIconProps> = ({ color, icon: Icon }) => {\n  // Derive the outline color based on the provided color\n  const auraColor = color.replace(\"-600\", \"-200\");\n\n  return (\n    <>\n    <div\n      className={clsx(\n        \"inline-flex size-6 items-center justify-center rounded-full\",\n        `text-${color}`,\n        `bg-${auraColor}`\n      )}\n      style={{\n        boxShadow: `0 0 0 8px var(--color-${auraColor})`,\n      }}\n    >\n      <Icon size={16} className={`size-6 h-5 w-5 text-${color}`} />\n    </div>\n</>\n  );\n};\n\nexport default FeaturedIcon;",
       "type": "registry:ui"
     }
