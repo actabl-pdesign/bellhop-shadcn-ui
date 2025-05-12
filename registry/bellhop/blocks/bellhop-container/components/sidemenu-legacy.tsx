@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Landmark, Home, Calendar, Calculator, CircleDollarSign, BarChart, ChartLine, Settings, TrendingUpDown, BookOpen } from "lucide-react";
+import { Landmark, Home, Calendar, Calculator, CircleDollarSign, BarChart, ChartArea, Settings, TrendingUpDown, BookOpen } from "lucide-react";
 
 type SideMenuVariant = "he" | "ps" | "tr";
 
@@ -15,7 +15,7 @@ const menuItems = {
     { label: "Budget", icon: CircleDollarSign },
     { label: "Forecast", icon: TrendingUpDown },
     { label: "Accounting", icon: Calculator },
-    { label: "ProfitPace", icon: ChartLine },
+    { label: "ProfitPace", icon: ChartArea },
     { label: "ProfitPlan", icon: BarChart },
     { label: "Admin", icon: Settings },
 
